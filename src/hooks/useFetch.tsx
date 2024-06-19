@@ -6,7 +6,6 @@ const useFetch = (url: string) => {
   useEffect(() => {
     const getData = () => {
       fetch(url, {
-        mode: 'cors',
         headers: { 'Content-Type': 'application/json' },
       })
         .then((response) => response.json())
